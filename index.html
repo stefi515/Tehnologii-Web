@@ -3,43 +3,66 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>NumeAplicatie - mockup</title>
+<title>PhotoGear Store - mockup</title>
 <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 <header class="app-header">
-<h1>NumeAplicatie</h1>
-<p>Descriere scurtă.</p>
-<p class="app-count">3 elemente, dintre care 2 active</p>
+<h1>PhotoGear Store</h1>
+<p>Manage your catalog of photography components, cameras and accessories.</p>
+<p class="app-count">3 items, 2 in stock</p>
 </header>
+
 <main class="container">
+
 <section class="panel">
-<h2>Adaugă ...</h2>
+<h2>Add item</h2>
 <form class="item-form">
-<label>Titlu <input type="text" name="titlu" placeholder="Ex: ..." /></label>
-<label>Etichetă
+<label>Product name <input type="text" name="titlu" placeholder="Ex: Canon EOS 1300D" /></label>
+<label>Condition
 <select name="eticheta">
-<option value="v1">Valoare 1</option>
+<option value="new">New</option>
+<option value="used">Used</option>
+<option value="open-box">Open-Box</option>
 </select>
 </label>
-<button type="submit">Adaugă</button>
+<button type="submit">Add</button>
 </form>
 </section>
+
 <section class="panel">
-<h2>Lista mea</h2>
+<h2>Catalog</h2>
 <!-- Când lista e goală: <p class="empty">Nu există niciun element.</p> -->
 <ul class="item-list">
+
 <li class="item-card">
 <div>
-<h3>Element 1</h3>
-<span class="badge badge-v1">Valoare 1</span>
+<h3>Canon EOS 1300D</h3>
+<span class="badge badge-used">Used</span>
 </div>
-<span class="status">Activ</span>
+<span class="status">In stock</span>
 </li>
-<li class="item-card done"> ... </li>
-<li class="item-card"> ... </li>
+
+<li class="item-card done">
+<div>
+<h3>Kodak Charmera</h3>
+<span class="badge badge-new">New</span>
+</div>
+<span class="status">Out of stock</span>
+</li>
+
+<li class="item-card"> 
+<div>
+<h3>Astrophotography tripod</h3>
+<span class="badge badge-open-box">Open-Box</span>
+</div>
+<span class="status">In stock</span>
+</li>
+
 </ul>
 </section>
+
 </main>
 <footer class="app-footer">Proiect Tehnologii Web</footer>
 </body>
