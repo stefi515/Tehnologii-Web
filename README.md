@@ -1,26 +1,30 @@
-# <PhotographyEquipmentAndComponentsStore>
-< A retail hub offering a wide selections of digital cameras, lenses and tehnical hardware components. It is for pasionate peolple and profesionals artists >
+# Photography Equipment And Components Store
+A retail hub offering a wide selection of digital cameras, lenses, and technical hardware components. It is for passionate people and professional artists.
+
 ## Data model
 | Field | Type | Notes |
 | ----------- | ------------ | ------------------------------------ |
-| <name> | text | required, max 100 chars |
-| <done flag> | boolean | toggled from the list, default false |
-| <fixed tag> | fixed values | <value1>, <value2>, <value3> |
-| <category> | relation | <Cat1>, <Cat2>, <Cat3> |
-| user | relation | the owner of the item (from week 11) |
+| Product name | text | required, max 100 chars |
+| In stock | boolean | toggled from the list, default false |
+| Condition | fixed values | New, Used, Open-box |
+| Category | relation | Cameras, Lenses, Accessories |
+| User | relation | the owner of the item (from week 11) |
+
 Sample data used across all stages:
-1. <item 1>, active, <tag>
-2. <item 2>, done, <tag>
-3. <item 3>, active, <tag>
+1. Canon EOS 1300D, active, Used
+2. Kodak Charmera, done, New
+3. Astrophotography tripod, active, New
 
 ## How to run
 Open `index.html` in a browser. No build step, no server.
+
 ## AI usage
 | Tool | Used for |
 | -------------- | ----------------------------------------- |
-| <e.g. ChatGPT> | <what exactly, e.g. CSS Grid, stage 1> |
+| Gemini | Clarifying Git setup |
+
 Details per stage: see the ai-log/ folder.
+
 ## Status
 - [x] Stage 1: static mockup
-☐ Stage 2: data logic in JavaScript
-
+- [ ] Stage 2: data logic in JavaScript
