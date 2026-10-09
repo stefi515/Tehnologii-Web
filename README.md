@@ -43,3 +43,15 @@ that read and change it. Results are printed in the browser console (F12).
 | S1-R6 | 2 columns on desktop, 1 under 700px | [desktop: style.css#L86-L94](https://github.com/stefi515/Tehnologii-Web/blob/main/style.css#L86-L94), [mobile: style.css#L258-L262](https://github.com/stefi515/Tehnologii-Web/blob/main/style.css#L258-L262) | resize < 700px |
 | S1-R7 | visible focus, readable dark theme | [style.css#L24-L35](https://github.com/stefi515/Tehnologii-Web/blob/main/style.css#L24-L35) | Tab; dark mode |
 | S1-R8 | commit “Stage 1” pushed | [commit Stage 1](https://github.com/stefi515/Tehnologii-Web/commit/f6975b5b839688553c4400502424cd343a93f6c2) | commit history | 
+
+### Stage 2 verification table
+
+| ID | Requirement | Where (permalink) | How to check |
+| --- | --- | --- | --- |
+| S2-R1 | JS file linked, logs on page load | [index.html#L66]https://github.com/stefi515/Tehnologii-Web/blob/main/index.html| open page, F12 |
+| S2-R2 | 3+ items with id, name, state, tag | [produse.js#L1-L6]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js| read |
+| S2-R3 | list, count, search, add, toggle, delete | [produse.js#L7-L44]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js | console output |
+| S2-R4 | add rejects empty name and invalid tag | [produse.js#L59-L60]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js| last 2 console lines |
+| S2-R5 | original array unchanged after add | [produse.js#L52]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js| console line |
+| S2-R6 | README Stage 2 section + AI log | [README.md]https://github.com/stefi515/Tehnologii-Web/blob/main/README.md, [ai-log/etapa-02.md]https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-02.md | read |
+| S2-R7 | commit "Stage 2" pushed | [commit Stage 2]https://github.com/stefi515/Tehnologii-Web/commit/ac72aed825de75ab9dfd580920a846c50359fa05| commit history |
