@@ -13,7 +13,7 @@ A retail hub offering a wide selection of digital cameras, lenses, and technical
 Sample data used across all stages:
 1. Canon EOS 1300D, active, Used
 2. Kodak Charmera, done, New
-3. Astrophotography tripod, active, New
+3. Astrophotography tripod, active, Open-box
 
 ## How to run
 Open `index.html` in a browser. No build step, no server.
@@ -24,10 +24,12 @@ Open `index.html` in a browser. No build step, no server.
 | Gemini | Clarifying Git setup |
 
 Details per stage: see the ai-log/ folder.
-
+## Stage 2: data logic
+Plain JavaScript, no DOM. produse.js holds the array and the functions
+that read and change it. Results are printed in the browser console (F12).
 ## Status
 - [x] Stage 1: static mockup
-- [ ] Stage 2: data logic in JavaScript
+- [X] Stage 2: data logic in JavaScript
 
 ## Verification table
 

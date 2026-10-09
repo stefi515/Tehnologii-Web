@@ -7,7 +7,6 @@ const CONDITII = ["new", "used", "open-box"];
 function listeazaTitluri(lista) {
 return lista.map((t) => t.titlu);
 }
-console.log("Titluri:", listeazaTitluri(produse).join(", "));
 function numaraInStoc(lista) {
   return lista.filter((p) => p.inStoc).length;
 }
