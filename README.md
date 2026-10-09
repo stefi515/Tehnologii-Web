@@ -48,10 +48,10 @@ that read and change it. Results are printed in the browser console (F12).
 
 | ID | Requirement | Where (permalink) | How to check |
 | --- | --- | --- | --- |
-| S2-R1 | JS file linked, logs on page load | [index.html#L66]https://github.com/stefi515/Tehnologii-Web/blob/main/index.html| open page, F12 |
-| S2-R2 | 3+ items with id, name, state, tag | [produse.js#L1-L6]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js| read |
-| S2-R3 | list, count, search, add, toggle, delete | [produse.js#L7-L44]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js | console output |
-| S2-R4 | add rejects empty name and invalid tag | [produse.js#L59-L60]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js| last 2 console lines |
-| S2-R5 | original array unchanged after add | [produse.js#L52]https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js| console line |
-| S2-R6 | README Stage 2 section + AI log | [README.md]https://github.com/stefi515/Tehnologii-Web/blob/main/README.md, [ai-log/etapa-02.md]https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-02.md | read |
-| S2-R7 | commit "Stage 2" pushed | [commit Stage 2]https://github.com/stefi515/Tehnologii-Web/commit/ac72aed825de75ab9dfd580920a846c50359fa05| commit history |
+| S2-R1 | JS file linked, logs on page load | [index.html#L66](https://github.com/stefi515/Tehnologii-Web/blob/main/index.html#L66) | open page, F12 |
+| S2-R2 | 3+ items with id, name, state, tag | [produse.js#L1-L6](https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js#L1-L6) | read |
+| S2-R3 | list, count, search, add, toggle, delete | [produse.js#L7-L44](https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js#L7-L44) | console output |
+| S2-R4 | add rejects empty name and invalid tag | [produse.js#L59-L60](https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js#L59-L60) | last 2 console lines |
+| S2-R5 | original array unchanged after add | [produse.js#L52](https://github.com/stefi515/Tehnologii-Web/blob/main/produse.js#L52) | console line |
+| S2-R6 | README Stage 2 section + AI log | [README.md](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-2-data-logic), [ai-log/etapa-02.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-02.md) | read |
+| S2-R7 | commit "Stage 2" pushed | [commit Stage 2](https://github.com/stefi515/Tehnologii-Web/commit/ac72aed825de75ab9dfd580920a846c50359fa05) | commit history |
