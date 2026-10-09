@@ -38,4 +38,4 @@ Details per stage: see the ai-log/ folder.
 | S1-R5 | finished card looks different | [style.css#L183-L206]https://github.com/stefi515/Tehnologii-Web/blob/main/style.css | look at the card |
 | S1-R6 | 2 columns on desktop, 1 under 700px | [style.css#L86-L94/L258-262]https://github.com/stefi515/Tehnologii-Web/blob/main/style.css| resize < 700px |
 | S1-R7 | visible focus, readable dark theme | [style.css#L24-L35]https://github.com/stefi515/Tehnologii-Web/blob/main/style.css| Tab; dark mode |
-| S1-R8 | commit “Stage 1” pushed | [https://github.com/stefi515/Tehnologii-Web/commit/f6975b5b839688553c4400502424cd343a93f6c2 | commit history |
+| S1-R8 | commit “Stage 1” pushed | [https://github.com/stefi515/Tehnologii-Web/commit/f6975b5b839688553c4400502424cd343a93f6c2] | commit history |
