@@ -83,4 +83,15 @@ The list is rendered from the data, through two components:
 | S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/.gitignore) | npm run build |
 | S3-R6 | README Stage 3 section + AI log | [README.md#stage-3-vite-and-react-project](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-3-vite-and-react-project), [ai-log/etapa-03.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-03.md) | read |
 | S3-R7 | commit "Stage 3" pushed | [commit Stage 3](https://github.com/stefi515/Tehnologii-Web/commit/e771abea7ba8f1e790541f83013f52c8c8580660) | commit history |
- |
+
+### Stage 4 verification table
+
+| ID | Requirement | Where (permalink) | How to check |
+| --- | --- | --- | --- |
+| S4-R1 | 2+ components in src/components/ | [frontend/src/components/](https://github.com/stefi515/Tehnologii-Web/tree/main/frontend/src/components) | open folder |
+| S4-R2 | card receives data through props | [frontend/src/components/ProdusCard.jsx#L10](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L10) | read |
+| S4-R3 | map + key={id}, no console warnings | [frontend/src/components/ProdusList.jsx#L13-L15](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusList.jsx#L13-L15) | F12, Console |
+| S4-R4 | message for empty list | [frontend/src/components/ProdusList.jsx#L6-L8](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusList.jsx#L6-L8) | set array to [] |
+| S4-R5 | state changes the card look | [frontend/src/components/ProdusCard.jsx#L13](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L13) | toggle a done flag |
+| S4-R6 | README Stage 4 section + AI log | [README.md#stage-4-components](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-4-components), [ai-log/etapa-04.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-04.md) | read |
+| S4-R7 | commit "Stage 4" pushed | [commit Stage 4](https://github.com/stefi515/Tehnologii-Web/commit/4b9ec041a539b8b75ab4585a375f28fb072f41eb) | commit history |
