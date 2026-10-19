@@ -1,8 +1,9 @@
+import ProdusList from "./components/ProdusList.jsx";
 const produse = [
   { id: 1, titlu: "Canon EOS 1300D", inStoc: true, conditie: "used" },
   { id: 2, titlu: "Kodak Charmera", inStoc: false, conditie: "new" },
   { id: 3, titlu: "Astrophotography tripod", inStoc: true, conditie: "open-box" }
-];
+]; 
 
 export default function App() {
   const inStoc = produse.filter((p) => p.inStoc).length;
@@ -20,7 +21,7 @@ export default function App() {
       <main className="container">
         <section className="panel">
           <h2>Catalog</h2>
-          <pre>{JSON.stringify(produse, null, 2)}</pre>
+          <ProdusList produse={produse} />
         </section>
       </main>
 

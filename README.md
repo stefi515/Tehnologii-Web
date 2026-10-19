@@ -36,11 +36,17 @@ cd frontend
 npm install
 npm run dev
 Then open the address printed in the terminal (http://localhost:5173)
+## Stage 4: components
+The list is rendered from the data, through two components:
+`ProdusList` receives the whole array and renders one card per item.
+`ProdusCard` receives a single item through props and displays it.
 
 ## Status
 - [x] Stage 1: static mockup
 - [X] Stage 2: data logic in JavaScript
 - [x] Stage 3: Vite and React project
+- [x] Stage 4: components rendered from data
+- [ ] Stage 5: local state and events
 ## Verification table
 
 | ID | Requirement | Where (permalink) | How to check |
@@ -77,3 +83,4 @@ Then open the address printed in the terminal (http://localhost:5173)
 | S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/.gitignore) | npm run build |
 | S3-R6 | README Stage 3 section + AI log | [README.md#stage-3-vite-and-react-project](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-3-vite-and-react-project), [ai-log/etapa-03.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-03.md) | read |
 | S3-R7 | commit "Stage 3" pushed | [commit Stage 3](https://github.com/stefi515/Tehnologii-Web/commit/e771abea7ba8f1e790541f83013f52c8c8580660) | commit history |
+ |
