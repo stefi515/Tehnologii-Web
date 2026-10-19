@@ -89,9 +89,9 @@ The list is rendered from the data, through two components:
 | ID | Requirement | Where (permalink) | How to check |
 | --- | --- | --- | --- |
 | S4-R1 | 2+ components in src/components/ | [frontend/src/components/](https://github.com/stefi515/Tehnologii-Web/tree/main/frontend/src/components) | open folder |
-| S4-R2 | card receives data through props | [frontend/src/components/ProdusCard.jsx#L10](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L10) | read |
-| S4-R3 | map + key={id}, no console warnings | [frontend/src/components/ProdusList.jsx#L13-L15](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusList.jsx#L13-L15) | F12, Console |
-| S4-R4 | message for empty list | [frontend/src/components/ProdusList.jsx#L6-L8](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusList.jsx#L6-L8) | set array to [] |
-| S4-R5 | state changes the card look | [frontend/src/components/ProdusCard.jsx#L13](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L13) | toggle a done flag |
+| S4-R2 | card receives data through props | [frontend/src/components/ProdusCard.jsx#L7](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L7) | read |
+| S4-R3 | map + key={id}, no console warnings | [frontend/src/components/ProdusList.jsx#L9-L11](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusList.jsx#L9-L11) | F12, Console |
+| S4-R4 | message for empty list | [frontend/src/components/ProdusList.jsx#L4-L6](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusList.jsx#L4-L6) | set array to [] |
+| S4-R5 | state changes the card look | [frontend/src/components/ProdusCard.jsx#L9](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#9) | toggle a done flag |
 | S4-R6 | README Stage 4 section + AI log | [README.md#stage-4-components](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-4-components), [ai-log/etapa-04.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-04.md) | read |
 | S4-R7 | commit "Stage 4" pushed | [commit Stage 4](https://github.com/stefi515/Tehnologii-Web/commit/4b9ec041a539b8b75ab4585a375f28fb072f41eb) | commit history |
