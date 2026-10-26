@@ -22,7 +22,7 @@
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
+  :root:not([data-theme="light"]) {
     --bg: #110606; 
     --card: #1f0b0b; 
     --text: #fdf8f8; 
@@ -34,6 +34,18 @@
     --header-text: #fdf8f8;
     --header-muted: #a38989;
   }
+}
+:root[data-theme="dark"] {
+    --bg: #110606; 
+    --card: #1f0b0b; 
+    --text: #fdf8f8; 
+    --muted: #a38989;
+    --border: #381515;
+    --accent: #b04141; 
+    --accent-hover: #b04141;
+    --header-bg: #1f0b0b;
+    --header-text: #fdf8f8;
+    --header-muted: #a38989;
 }
 
 body {
@@ -267,4 +279,56 @@ body {
 :focus-visible {
   outline: 2px dashed var(--accent);
   outline-offset: 4px;
+}
+.item-main { 
+  display: flex; 
+  align-items: center; 
+  gap: 12px; 
+  cursor: pointer; 
+}
+
+.item-main input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--accent);
+  cursor: pointer;
+  margin: 0;
+}
+
+.btn-danger {
+  border: 1px solid var(--accent);
+  background: transparent;
+  color: var(--accent);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-danger:hover { 
+  background: var(--accent); 
+  color: #fff; 
+}
+
+.app-header { 
+  position: relative; 
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  padding: 6px 12px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  background: transparent;
+  color: #ffffff;
+  font: inherit;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.theme-toggle:hover { 
+  background: rgba(255, 255, 255, 0.15); 
 }
