@@ -101,3 +101,16 @@ which is what stage 6 and stage 10 fix.
 | S4-R5 | state changes the card look | [frontend/src/components/ProdusCard.jsx#L9](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#9) | toggle a done flag |
 | S4-R6 | README Stage 4 section + AI log | [README.md#stage-4-components](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-4-components), [ai-log/etapa-04.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-04.md) | read |
 | S4-R7 | commit "Stage 4" pushed | [commit Stage 4](https://github.com/stefi515/Tehnologii-Web/commit/4b9ec041a539b8b75ab4585a375f28fb072f41eb) | commit history |
+
+### Stage 5 verification table
+
+| ID | Requirement | Where (permalink) | How to check |
+| --- | --- | --- | --- |
+| S5-R1 | list kept in useState, in App | [App.jsx#L15](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L15) | read |
+| S5-R2 | toggling changes state and card look | [App.jsx#L18-L22](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L18-L22), [ProdusCard.jsx#L11-L15](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L11-L15) | click a checkbox |
+| S5-R3 | delete removes the item | [App.jsx#L24-L26](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L24-L26), [ProdusCard.jsx#L26-L29](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx#L26-L29) | click Delete |
+| S5-R4 | header counter derived, not in state | [App.jsx#L34](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L34) | toggle, watch header |
+| S5-R5 | immutable updates (no push, splice, assignment) | [App.jsx#L18-L26](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L18-L26) | read |
+| S5-R6 | light/dark toggle: state + data-theme on html | [App.jsx#L28-L32](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L28-L32), [App.css#L20-L33](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.css#L20-L33) | click the button, both system themes |
+| S5-R7 | no console warnings; README + AI log | README.md, ai-log/etapa-05.md | F12, Console |
+| S5-R8 | commit "Stage 5" pushed | [commit Stage 5](https://github.com/stefi515/Tehnologii-Web/commit/9821d2fe2c3000f5f7b60ef78efd6ae7c88cb030) | commit history |
