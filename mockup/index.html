@@ -1,12 +1,62 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ro">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PhotoGear Store</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PhotoGear Store mockup</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="app-header">
+    <h1>PhotoGear Store</h1>
+    <p>Manage your catalog of photography components, cameras and accessories.</p>
+    <p class="app-count">3 items, 2 in stock</p>
+  </header>
+  
+  <main class="container">
+    <section class="panel">
+      <h2>Catalog</h2>
+      <form class="item-form">
+        <label>Product name <input type="text" name="titlu" placeholder="Ex: Sony Alpha a7 III" /></label>
+        <label>Condition
+          <select name="conditie">
+            <option value="new">New</option>
+            <option value="used">Used</option>
+            <option value="open-box">Open-box</option>
+          </select>
+        </label>
+        <button type="submit">Add</button>
+      </form>
+    </section>
+    
+    <section class="panel">
+      <h2>Catalog</h2>
+      <ul class="item-list">
+        <li class="item-card">
+          <div>
+            <h3>Canon EOS 1300D</h3>
+            <span class="badge badge-used">Used</span>
+          </div>
+          <span class="status">In stock</span>
+        </li>
+        <li class="item-card done">
+          <div>
+            <h3>Kodak Charmera</h3>
+            <span class="badge badge-new">New</span>
+          </div>
+          <span class="status">Out of stock</span>
+        </li>
+        <li class="item-card">
+          <div>
+            <h3>Astrophotography tripod</h3>
+            <span class="badge badge-open-box">Open-box</span>
+          </div>
+          <span class="status">In stock</span>
+        </li>
+      </ul>
+    </section>
+  </main>
+  
+  <footer class="app-footer">Proiect Tehnologii Web</footer>
+</body>
 </html>
