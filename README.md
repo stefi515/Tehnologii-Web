@@ -82,12 +82,12 @@ which is what stage 6 and stage 10 fix.
 
 | ID | Requirement | Where (permalink) | How to check |
 | --- | --- | --- | --- |
-| S3-R1 | npm run dev starts without errors | [frontend/package.json](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/package.json) | npm install, npm run dev |
-| S3-R2 | app name and counter computed from data | [frontend/src/App.jsx#L8-L20](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L8-L20) | edit data, save |
-| S3-R3 | data from README, not from the example | [frontend/src/App.jsx#L1-L5](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.jsx#L1-L5) | compare with README |
-| S3-R4 | stage 1 styles reused | [frontend/src/App.css](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/App.css) | look at the page |
-| S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/.gitignore) | npm run build |
-| S3-R6 | README Stage 3 section + AI log | [README.md#stage-3-vite-and-react-project](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md#stage-3-vite-and-react-project), [ai-log/etapa-03.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-03.md) | read |
+| S3-R1 | npm run dev starts without errors | [frontend/package.json](https://github.com/stefi515/Tehnologii-Web/blob/e771abea7ba8f1e790541f83013f52c8c8580660/frontend/package.json) | npm install, npm run dev |
+| S3-R2 | app name and counter computed from data | [frontend/src/App.jsx#L13-L17](https://github.com/stefi515/Tehnologii-Web/blob/e771abea7ba8f1e790541f83013f52c8c8580660/frontend/src/App.jsx#L13-L17) | edit data, save |
+| S3-R3 | data from README, not from the example | [frontend/src/App.jsx#L1-L5](https://github.com/stefi515/Tehnologii-Web/blob/e771abea7ba8f1e790541f83013f52c8c8580660/frontend/src/App.jsx#L1-L5) | compare with README |
+| S3-R4 | stage 1 styles reused | [frontend/src/App.css](https://github.com/stefi515/Tehnologii-Web/blob/e771abea7ba8f1e790541f83013f52c8c8580660/frontend/src/App.css) | look at the page |
+| S3-R5 | node_modules ignored, build passes | [frontend/.gitignore](https://github.com/stefi515/Tehnologii-Web/blob/e771abea7ba8f1e790541f83013f52c8c8580660/frontend/.gitignore) | npm run build |
+| S3-R6 | README Stage 3 section + AI log | [README.md#stage-3-vite-and-react-project](https://github.com/stefi515/Tehnologii-Web/blob/main/README.md), [ai-log/etapa-03.md](https://github.com/stefi515/Tehnologii-Web/blob/e771abea7ba8f1e790541f83013f52c8c8580660/ai-log/etapa-03.md) | read |
 | S3-R7 | commit "Stage 3" pushed | [commit Stage 3](https://github.com/stefi515/Tehnologii-Web/commit/e771abea7ba8f1e790541f83013f52c8c8580660) | commit history |
 
 ### Stage 4 verification table
