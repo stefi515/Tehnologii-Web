@@ -61,9 +61,9 @@ which is what stage 6 and stage 10 fix.
 | S1-R2 | AI usage section | [README.md#ai-usage](https://github.com/stefi515/Tehnologii-Web/blob/f6975b5b839688553c4400502424cd343a93f6c2/README.md#ai-usage) | read |
 | S1-R3 | AI log for stage 1 | [ai-log/etapa-01.md](https://github.com/stefi515/Tehnologii-Web/blob/f6975b5b839688553c4400502424cd343a93f6c2/ai-log/etapa-01.md) | read |
 | S1-R4 | header, form (text + select), 3 cards with own data | [mockup/index.html#L10-L58](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/index.html#L10-L58) | open the page |
-| S1-R5 | finished card looks different | [mockup/style.css#L154-L168](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L154-L168) | look at the card |
-| S1-R6 | 2 columns on desktop, 1 under 700px | [desktop: mockup/style.css#L71-L78](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L71-L78), [mobile: mockup/style.css#L182-L186](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L182-L186) | resize < 700px |
-| S1-R7 | visible focus, readable dark theme | [mockup/style.css#L22-L32](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L22-L32) | Tab; dark mode |
+| S1-R5 | finished card looks different | [mockup/style.css#L231-L235](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L231-L235) | look at the card |
+| S1-R6 | 2 columns on desktop, 1 under 700px | [desktop: mockup/style.css#L86-L94](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L86-L94), [mobile: mockup/style.css#L258-L262](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L182-L186) | resize < 700px |
+| S1-R7 | visible focus, readable dark theme | [mockup/style.css#L24-L36](https://github.com/stefi515/Tehnologii-Web/blob/main/mockup/style.css#L24-L36) | Tab; dark mode |
 | S1-R8 | commit “Stage 1” pushed | [commit Stage 1](https://github.com/stefi515/Tehnologii-Web/commit/f6975b5b839688553c4400502424cd343a93f6c2) | commit history |
 
 ### Stage 2 verification table
