@@ -1,0 +1,39 @@
+{
+  "produse": [
+    { 
+      "id": 1, 
+      "titlu": "Canon EOS 1300D", 
+      "inStoc": true, 
+      "conditie": "used", 
+      "imagine": "/img/My first DSLR camera_ Canon EOS 1300D_.jpg" 
+    },
+    { 
+      "id": 2, 
+      "titlu": "Kodak Charmera", 
+      "inStoc": false, 
+      "conditie": "new", 
+      "imagine": "/img/Kodak Charmera Keychain Digital Camera Blind Box.jpg" 
+    },
+    { 
+      "id": 3, 
+      "titlu": "Astrophotography tripod", 
+      "inStoc": true, 
+      "conditie": "open-box", 
+      "imagine": "/img/astro.jpg" 
+    },
+    { 
+      "id": 4, 
+      "titlu": "Sony Alpha a7 III", 
+      "inStoc": false, 
+      "conditie": "new", 
+      "imagine": "/img/SmallRig L Bracket for Sony Alpha 7 III _ Alpha 7R III _ Alpha 9 Camera 2122.jpg" 
+    },
+    { 
+      "id": 5, 
+      "titlu": "50mm Prime Lens", 
+      "inStoc": true, 
+      "conditie": "used", 
+      "imagine": "/img/25+ Canon EF 50mm F_1_8 STM Prime Lens - Black for sale _ Updated Nov 2026.jpg" 
+    }
+  ]
+}

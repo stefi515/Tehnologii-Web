@@ -19,6 +19,8 @@
   --badge-used: #e9b966; 
   --badge-open-box: #6d9dea;
   --badge-text: #ffffff;
+  --error-bg: #fdf2f8;
+  --error-border: #fbcfe8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -33,6 +35,8 @@
     --header-bg: #1f0b0b;
     --header-text: #fdf8f8;
     --header-muted: #a38989;
+    --error-bg: #3b1d2e;
+    --error-border: #6b2a4a;
   }
 }
 :root[data-theme="dark"] {
@@ -331,4 +335,120 @@ body {
 
 .theme-toggle:hover { 
   background: rgba(255, 255, 255, 0.15); 
+}
+
+.info { 
+  color: var(--muted); 
+}
+.error {
+  color: var(--accent);
+  background: var(--error-bg);
+  border: 1px solid var(--error-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+.store-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.store-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.store-card:hover {
+  border-color: #991b1b; 
+  transform: translateY(-3px);
+}
+
+.card-image-container {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.card-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+  transition: transform 0.4s ease;
+}
+
+.store-card:hover .card-image-container img {
+  transform: scale(1.08);
+}
+
+.store-badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #991b1b;
+  color: white;
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.store-badge.used { background-color: #d97706; }
+.store-badge.open-box { background-color: #2563eb; }
+
+.card-details {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-details h3 {
+  margin: 0 0 15px 0;
+  font-size: 1.1rem;
+}
+
+.stock-control {
+  margin-top: auto;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.text-green { color: #10b981; }
+.text-red { color: #ef4444; }
+
+.btn-delete {
+  width: 100%;
+  background-color: transparent;
+  color: #ef4444;
+  border: 1px solid #ef4444;
+  padding: 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #ef4444;
+  color: white;
+}
+
+.store-card.out-of-stock .card-image-container img {
+  filter: grayscale(100%);
+  opacity: 0.4;
 }
