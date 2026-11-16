@@ -1,0 +1,6 @@
+{
+  "resource": "produse",
+  "title": "titlu",
+  "done": "in_stoc",
+  "sample": { "conditie": "USED" }
+}
