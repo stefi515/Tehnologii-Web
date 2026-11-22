@@ -1,26 +1,28 @@
-// frontend/src/api.js
-export const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001"; 
+export const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001";
 
-// Funcție comună: trimite JSON și aruncă eroare dacă răspunsul nu este 2xx
 async function request(path, options = {}) {
   const res = await fetch(`${API_URL}${path}`, {
-    ...options, //[cite: 3]
+    ...options,
     headers: { "Content-Type": "application/json", ...options.headers },
   });
-  
+
   if (!res.ok) {
     throw new Error(`Eroare server: ${res.status}`);
   }
-  
-  // 204 No Content nu are corp[cite: 3]
-  return res.status === 204 ? null : res.json(); 
+
+  return res.status === 204 ? null : res.json();
 }
 
 export function fetchProduse() {
-  return request("/produse"); 
+  return request("/produse");
 }
+
+export function fetchProdus(id) {
+  return request(`/produse/${id}`);
+}
+
 export function createProdus(produs) {
-  return request("/produse", { method: "POST", body: JSON.stringify(produs) }); 
+  return request("/produse", { method: "POST", body: JSON.stringify(produs) });
 }
 
 export function updateProdus(id, changes) {
@@ -28,5 +30,5 @@ export function updateProdus(id, changes) {
 }
 
 export function deleteProdus(id) {
-  return request(`/produse/${id}`, { method: "DELETE" }); 
+  return request(`/produse/${id}`, { method: "DELETE" });
 }

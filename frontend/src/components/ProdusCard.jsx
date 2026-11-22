@@ -1,36 +1,57 @@
+import { Link } from "react-router-dom";
+import { ETICHETE_CONDITIE } from "../constants.js";
+import styles from "./ProdusCard.module.css";
+
 export default function ProdusCard({ produs, onToggle, onDelete }) {
   return (
-    <li 
-      className={`store-card ${!produs.inStoc ? "out-of-stock" : ""}`}
-      data-testid="item" 
+    <li
+      className={
+        !produs.inStoc ? `${styles.card} ${styles.outOfStock}` : styles.card
+      }
+      data-testid="item"
       data-id={produs.id}
     >
-      <div className="card-image-container">
-        <img src={produs.imagine} alt={produs.titlu} />
-        <span className={`store-badge ${produs.conditie}`}>{produs.conditie}</span>
-      </div>
-      
-      <div className="card-details">
-        {/* Titlul marcat cu item-title */}
-        <h3 data-testid="item-title">{produs.titlu}</h3>
-        
-        <label className="stock-control">
-          {/* Checkbox-ul marcat cu item-toggle*/}
+      {produs.imagine && (
+        <div className={styles.imageContainer}>
+          <img src={produs.imagine} alt={produs.titlu} className={styles.image} />
+          <span className={`badge badge-${produs.conditie} ${styles.badgePos}`}>
+            {ETICHETE_CONDITIE[produs.conditie] || produs.conditie}
+          </span>
+        </div>
+      )}
+
+      <div className={styles.details}>
+        <Link
+          to={`/produse/${produs.id}`}
+          className={styles.title}
+          data-testid="item-link"
+        >
+          {produs.titlu}
+        </Link>
+
+        {!produs.imagine && (
+          <span className={`badge badge-${produs.conditie}`}>
+            {ETICHETE_CONDITIE[produs.conditie] || produs.conditie}
+          </span>
+        )}
+
+        <label className={styles.stockControl}>
           <input
             type="checkbox"
             checked={produs.inStoc}
             onChange={() => onToggle(produs.id)}
+            aria-label={`Toggle stock for ${produs.titlu}`}
             data-testid="item-toggle"
           />
-          <span className={produs.inStoc ? "text-green" : "text-red"}>
+          <span className={produs.inStoc ? styles.inStockText : styles.outOfStockText}>
             {produs.inStoc ? "In Stock" : "Out of Stock"}
           </span>
         </label>
 
-        {/* Butonul de ștergere marcat cu item-delete*/}
-        <button 
-          className="btn-delete" 
+        <button
+          className="btn-danger"
           onClick={() => onDelete(produs.id)}
+          aria-label={`Delete ${produs.titlu}`}
           data-testid="item-delete"
         >
           Delete

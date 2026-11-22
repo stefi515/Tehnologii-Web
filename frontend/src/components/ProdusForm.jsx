@@ -1,66 +1,66 @@
-// frontend/src/components/ProdusForm.jsx
 import { useState } from "react";
+import { CONDITII } from "../constants.js";
+import styles from "./ProdusForm.module.css";
 
-const CONDITII = [
-  { value: "NEW", label: "Nou (New)" },
-  { value: "USED", label: "Folosit (Used)" },
-  { value: "OPEN-BOX", label: "Desigilat (Open-Box)" }
-];
-const TITLU_MAX = 100; 
+const TITLU_MAX = 100;
 
 export default function ProdusForm({ onAdd }) {
   const [titlu, setTitlu] = useState("");
-  const [conditie, setConditie] = useState("NEW");
-  const [eroare, setEroare] = useState(""); 
-  const [trimite, setTrimite] = useState(false); 
+  const [conditie, setConditie] = useState("new");
+  const [eroare, setEroare] = useState("");
+  const [trimite, setTrimite] = useState(false);
 
   function valideaza() {
     const t = titlu.trim();
-    if (t === "") return "Titlul este obligatoriu."; 
-    if (t.length > TITLU_MAX) return `Titlul are maximum ${TITLU_MAX} de caractere.`; 
+    if (t === "") return "Product title is required.";
+    if (t.length > TITLU_MAX) return `Title must be at most ${TITLU_MAX} characters.`;
     return "";
   }
 
   async function handleSubmit(e) {
-    e.preventDefault(); // oprește reîncărcarea paginii
+    e.preventDefault();
     const mesaj = valideaza();
-    
+
     if (mesaj) {
       setEroare(mesaj);
-      return; 
+      return;
     }
-    
-    setEroare(""); // șterge o eroare rămasă de la o încercare anterioară
-    setTrimite(true); // dezactivează butonul și îi schimbă textul
-    
+
+    setEroare("");
+    setTrimite(true);
+
     try {
-      // Trimitem echipamentul la App. Implicit setăm in_stoc pe true
-      await onAdd({ titlu: titlu.trim(), conditie, in_stoc: true }); 
-      setTitlu(""); // golirea câmpurilor se face doar dacă salvarea a reușit
-      setConditie("NEW"); 
+      await onAdd({
+        titlu: titlu.trim(),
+        conditie,
+        inStoc: true,
+        imagine: "",
+      });
+      setTitlu("");
+      setConditie("new");
     } catch (err) {
-      setEroare(err.message); 
+      setEroare(err.message);
     } finally {
-      setTrimite(false); // repune butonul în funcțiune, indiferent cum s-a terminat cererea
+      setTrimite(false);
     }
   }
 
   return (
-    <form className="task-form" onSubmit={handleSubmit} noValidate data-testid="form">
+    <form className={styles.form} onSubmit={handleSubmit} noValidate data-testid="form">
       <label>
-        Titlu Echipament
+        Equipment Title
         <input
           type="text"
           value={titlu}
           onChange={(e) => setTitlu(e.target.value)}
-          placeholder="Ex: Canon EOS 1300D"
+          placeholder="e.g. Canon EOS 1300D"
           maxLength={TITLU_MAX}
           aria-invalid={Boolean(eroare)}
           data-testid="form-title"
         />
       </label>
       <label>
-        Condiție
+        Condition
         <select
           value={conditie}
           onChange={(e) => setConditie(e.target.value)}
@@ -78,8 +78,8 @@ export default function ProdusForm({ onAdd }) {
           {eroare}
         </p>
       )}
-      <button type="submit" disabled={trimite} data-testid="form-submit">
-        {trimite ? "Se salvează..." : "Adaugă în catalog"}
+      <button type="submit" className="btn" disabled={trimite} data-testid="form-submit">
+        {trimite ? "Saving..." : "Add to Catalog"}
       </button>
     </form>
   );

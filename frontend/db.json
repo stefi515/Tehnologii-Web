@@ -1,39 +1,59 @@
 {
   "produse": [
-    { 
-      "id": 1, 
-      "titlu": "Canon EOS 1300D", 
-      "inStoc": true, 
-      "conditie": "used", 
-      "imagine": "/img/My first DSLR camera_ Canon EOS 1300D_.jpg" 
+    {
+      "id": 1,
+      "titlu": "Canon EOS 1300D",
+      "inStoc": true,
+      "conditie": "used",
+      "imagine": "/img/My first DSLR camera_ Canon EOS 1300D_.jpg",
+      "brand": "Canon",
+      "pret": 1450,
+      "descriere": "Entry-level DSLR camera with EF-S 18-55mm kit lens, great for learning manual photography and astrophotography.",
+      "specificatii": "18 MP APS-C CMOS · DIGIC 4+ · ISO 100–6400 · Full HD 1080p · Built-in Wi-Fi & NFC"
     },
-    { 
-      "id": 2, 
-      "titlu": "Kodak Charmera", 
-      "inStoc": false, 
-      "conditie": "new", 
-      "imagine": "/img/Kodak Charmera Keychain Digital Camera Blind Box.jpg" 
+    {
+      "id": 2,
+      "titlu": "Kodak Charmera",
+      "inStoc": false,
+      "conditie": "new",
+      "imagine": "/img/Kodak Charmera Keychain Digital Camera Blind Box.jpg",
+      "brand": "Kodak",
+      "pret": 180,
+      "descriere": "Ultra-compact retro keychain digital camera for candid everyday shots with a nostalgic lo-fi look.",
+      "specificatii": "Keychain form factor · microSD slot (up to 32GB) · USB-C charging · Retro color filters"
     },
-    { 
-      "id": 3, 
-      "titlu": "Astrophotography tripod", 
-      "inStoc": true, 
-      "conditie": "open-box", 
-      "imagine": "/img/astro.jpg" 
+    {
+      "id": 3,
+      "titlu": "Astrophotography tripod",
+      "inStoc": true,
+      "conditie": "open-box",
+      "imagine": "/img/astro.jpg",
+      "brand": "K&F Concept",
+      "pret": 390,
+      "descriere": "Sturdy aluminum tripod designed for long-exposure night sky photography with minimal vibration.",
+      "specificatii": "Max height 175 cm · 360° ball head · Quick-release plate · Max load 10 kg · Weight 1.4 kg"
     },
-    { 
-      "id": 4, 
-      "titlu": "Sony Alpha a7 III", 
-      "inStoc": false, 
-      "conditie": "new", 
-      "imagine": "/img/SmallRig L Bracket for Sony Alpha 7 III _ Alpha 7R III _ Alpha 9 Camera 2122.jpg" 
+    {
+      "id": 4,
+      "titlu": "Sony Alpha a7 III",
+      "inStoc": false,
+      "conditie": "new",
+      "imagine": "/img/SmallRig L Bracket for Sony Alpha 7 III _ Alpha 7R III _ Alpha 9 Camera 2122.jpg",
+      "brand": "Sony",
+      "pret": 7800,
+      "descriere": "Full-frame mirrorless camera offering outstanding low-light performance, fast autofocus, and 5-axis stabilization.",
+      "specificatii": "24.2 MP Full-Frame BSI CMOS · 693-point AF · 10 fps burst · 4K HDR video · Dual SD slots"
     },
-    { 
-      "id": 5, 
-      "titlu": "50mm Prime Lens", 
-      "inStoc": true, 
-      "conditie": "used", 
-      "imagine": "/img/25+ Canon EF 50mm F_1_8 STM Prime Lens - Black for sale _ Updated Nov 2026.jpg" 
+    {
+      "id": 5,
+      "titlu": "50mm Prime Lens",
+      "inStoc": true,
+      "conditie": "used",
+      "imagine": "/img/25+ Canon EF 50mm F_1_8 STM Prime Lens - Black for sale _ Updated Nov 2026.jpg",
+      "brand": "Canon",
+      "pret": 520,
+      "descriere": "Lightweight standard prime lens with a wide f/1.8 aperture for sharp portraits and smooth background blur.",
+      "specificatii": "50mm focal length · f/1.8–f/22 aperture · STM stepping motor · EF mount · Weight 160 g"
     }
   ]
 }
