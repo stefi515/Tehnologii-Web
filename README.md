@@ -60,6 +60,14 @@ Equipment items can be added directly from the page. The form is controlled and 
 
 ## Stage 8: routing and detail page
 Three pages behind React Router: the equipment catalog list, a detail page at `/produse/:id` (displaying brand, price, description, and specs), an about page (`/despre`), plus a 404 page for unknown URLs. Component styles moved to CSS Modules, keeping only shared variables and utility classes in `index.css`.
+
+## Stage 9: own backend
+json-server is gone. The API is an Express server in `backend/`, with REST routes, server side validation and CORS. Data is still kept in memory and resets on restart.
+## How to run
+```bash
+cd backend && npm install && npm run dev    # terminal 1, port 3001
+cd frontend && npm install && npm run dev   # terminal 2, port 5173
+
 ## Status
 - [x] Stage 1: static mockup
 - [x] Stage 2: data logic in JavaScript
@@ -69,7 +77,7 @@ Three pages behind React Router: the equipment catalog list, a detail page at `/
 - [x] Stage 6: loading data from a mock API
 - [x] Stage 7: form and validation
 - [x] Stage 8: routing and detail page
-- [ ] Stage 9: own backend with Express
+- [x] Stage 9: own backend with Express
 ## Verification table
 
 | ID | Requirement | Where (permalink) | How to check |
