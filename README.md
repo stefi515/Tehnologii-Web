@@ -140,7 +140,7 @@ Three pages behind React Router: the equipment catalog list, a detail page at `/
 | S6-R3 | loading message while waiting | [ProdusePage.jsx](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/pages/ProdusePage.jsx#L96-L100) | `--delay 4000` |
 | S6-R4 | error message when API is down | [ProdusePage.jsx](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/pages/ProdusePage.jsx#L102-L106) | stop `npm run api`, refresh |
 | S6-R5 | `fetch` only in `api.js`, URL from env | [api.js](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/api.js#L1-L14), [.env.example](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/.env.example) | search for `fetch` |
-| S6-R6 | README Stage 6 section + AI log | [README.md](LINK), [ai-log/etapa-06.md](LINK) | read |
+| S6-R6 | README Stage 6 section + AI log | [README.md](LINK), [ai-log/etapa-06.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-06.md) | read |
 | S6-R7 | commit "Stage 6" pushed | [Stage 6 commit](https://github.com/stefi515/Tehnologii-Web/commit/6276f606a45b6ab5ca7551dc5b0c088c29ff782e) | commit history |
 
 
@@ -153,7 +153,7 @@ Three pages behind React Router: the equipment catalog list, a detail page at `/
 | S7-R4 | toggle and delete survive refresh | [ProdusePage.jsx](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/pages/ProdusePage.jsx#L41-L58) | toggle/delete, refresh |
 | S7-R5 | button disabled while sending, form cleared only on success | [ProdusForm.jsx](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/components/ProdusForm.jsx#L32-L45) | `--delay 3000`; stop API and submit |
 | S7-R6 | `tw.json` and the `data-testid` attributes from table 7.3 | [tw.json](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/tw.json), [ProdusCard.jsx](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/components/ProdusCard.jsx#L7-L60) | `querySelectorAll` in the console |
-| S7-R7 | README Stage 7 section + AI log | [README.md](LINK), [ai-log/etapa-07.md](LINK) | read |
+| S7-R7 | README Stage 7 section + AI log | [README.md](LINK), [ai-log/etapa-07.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-07.md) | read |
 | S7-R8 | commit "Stage 7" pushed | [Stage 7 commit](https://github.com/stefi515/Tehnologii-Web/commit/b9419d335f78b52820da4041dd7abf1b1f4b3336) | commit history |
 
 ### Stage 8 verification table
@@ -165,5 +165,5 @@ Three pages behind React Router: the equipment catalog list, a detail page at `/
 | S8-R4 | unknown URL shows the app 404 page | [App.jsx (`path="*"`)](https://github.com/stefi515/Tehnologii-Web/blob/b4b8652e9c43738f549dfa31a6c01e284869cf86/frontend/src/App.jsx#L15), [NotFoundPage.jsx](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/pages/NotFoundPage.jsx) | open `/ceva` |
 | S8-R5 | each component has its `.module.css`; `index.css` only shared styles | [src/components](https://github.com/stefi515/Tehnologii-Web/tree/main/frontend/src/components), [src/pages](https://github.com/stefi515/Tehnologii-Web/tree/main/frontend/src/pages), [index.css](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/index.css) | read |
 | S8-R6 | `data-testid` attributes from tables 7.3 and 8.2; detail route `/produse/:id` | [Layout.jsx](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/Layout.jsx), [ProdusCard.jsx](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/components/ProdusCard.jsx), [ProdusDetaliuPage.jsx](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/pages/ProdusDetaliuPage.jsx), [NotFoundPage.jsx](https://github.com/stefi515/Tehnologii-Web/blob/main/frontend/src/pages/NotFoundPage.jsx) | `querySelector` in the console |
-| S8-R7 | README Stage 8 section + AI log | [README.md](LINK), [ai-log/etapa-08.md](LINK) | read |
+| S8-R7 | README Stage 8 section + AI log | [README.md](LINK), [ai-log/etapa-08.md](https://github.com/stefi515/Tehnologii-Web/blob/main/ai-log/etapa-08.md) | read |
 | S8-R8 | commit "Stage 8" pushed | [Stage 8 commit](https://github.com/stefi515/Tehnologii-Web/commit/b4b8652e9c43738f549dfa31a6c01e284869cf86) | commit history |
