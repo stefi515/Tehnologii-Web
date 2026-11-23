@@ -55,14 +55,11 @@ npm run api   # terminal 1, http://localhost:3001
 npm run dev   # terminal 2, http://localhost:5173
 ```
 
-## Stage 8: routing and detail page
-Three pages behind React Router: the equipment catalog list, a detail page at `/produse/:id` (displaying brand, price, description, and specs), an about page (`/despre`), plus a 404 page for unknown URLs. Component styles moved to CSS Modules, keeping only shared variables and utility classes in `index.css`.
-
 ## Stage 7: form and validation
 Equipment items can be added directly from the page. The form is controlled and validated, and every change (add, stock toggle, delete) goes to the API before updating the list. Automated testing markers (tw.json and data-testid) were added.
 
 ## Stage 8: routing and detail page
-Three pages behind React Router: the equipment catalog list (/), a detail page at /produse/:id (showing brand, price, description, and specs), an about page (/despre), plus a 404 page (*). Component styles moved to CSS Modules, keeping only shared variables and utility classes in index.css.
+Three pages behind React Router: the equipment catalog list, a detail page at `/produse/:id` (displaying brand, price, description, and specs), an about page (`/despre`), plus a 404 page for unknown URLs. Component styles moved to CSS Modules, keeping only shared variables and utility classes in `index.css`.
 ## Status
 - [x] Stage 1: static mockup
 - [x] Stage 2: data logic in JavaScript
