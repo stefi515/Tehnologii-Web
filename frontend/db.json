@@ -14,7 +14,7 @@
     {
       "id": 2,
       "titlu": "Kodak Charmera",
-      "inStoc": false,
+      "inStoc": true,
       "conditie": "new",
       "imagine": "/img/Kodak Charmera Keychain Digital Camera Blind Box.jpg",
       "brand": "Kodak",
